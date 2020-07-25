@@ -117,10 +117,6 @@ main {
 	max-width: 40%;
 }
 
-.qual-list div p {
-	margin:;
-}
-
 .skill-icons div .listIcon,.qual-list div .listIcon{
 	align-self: center;
 	padding-bottom: 5px;
@@ -423,6 +419,11 @@ main {
 		align-content: center;
 	}
 
+	.qual-list div p {
+		align-self: center;
+		margin-left: 5px;
+	}
+	
 	/* Contact */
 	.contact {
 		display:grid;
@@ -464,5 +465,4 @@ main {
 	.nav-footer {
 		display: none;
 	}
-
 }	
