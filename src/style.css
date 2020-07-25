@@ -423,13 +423,7 @@ main {
 		align-content: center;
 	}
 
-	.qual-list div p {
-		align-self: center;
-		margin-left: 5px;
-	}
-	
 	/* Contact */
-	
 	.contact {
 		display:grid;
 		grid-template-columns: 1fr;
