@@ -202,6 +202,9 @@ function ProfilePage(){
 					</div>
 					<button type="submit" className="btn w-100">Submit</button>
 				</form>
+			</div>
+			<div className="contact-right">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3860.5669074179236!2d121.00714251464937!3d14.62373038043043!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397b615968bd5e5%3A0xb6d3b0563744cf08!2s76a%20BMA%20Ave%2C%20Quezon%20City%2C%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1595757695309!5m2!1sen!2sph" frameBorder="0" allowFullScreen="" className="img-fluid map embed-responsive embed" aria-hidden="false" tabIndex="0"></iframe>
 			</div>	
 			<div className="contact-center">
 				<div className="contact-links">
