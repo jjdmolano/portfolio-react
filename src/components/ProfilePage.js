@@ -1,4 +1,5 @@
 import React from 'react';
+import {useSpring, animated} from 'react-spring';
 import ProfilePic from '../images/profile.jpg';
 import Carousel1 from '../images/carousel-1.jpg';
 import Carousel2 from '../images/carousel-2.jpg';
@@ -13,6 +14,11 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 library.add(faHtml5, faCss3Alt, faBootstrap, faJsSquare, faReact, faPhp, faPython, faNodeJs, faJava, faHandshake, faPeopleArrows, faGraduationCap, faCoffee, faIdBadge, faCertificate, faUserAlt, faList, faPhone, faGitlab, faLinkedin, faFacebookSquare, faEnvelope, faFile);
 
 function ProfilePage(){
+
+	const calc = (x, y) => [-(y - window.innerHeight / 2) / 20, (x - window.innerWidth / 2) / 20, 1]
+	const trans = (x, y, s) => `perspective(600px) rotateX(${x}deg) rotateY(${y}deg) scale(${s})`
+	const [props, set] = useSpring(() => ({ xys: [0, 0, 1], config: { mass: 1, tension: 210, friction: 24 } }))
+
 	return(
 	<main  data-spy="scroll" data-target="#nav-footer">
 		<div className="about" id="about">
@@ -79,24 +85,42 @@ function ProfilePage(){
 			<div className="about-center">
 				<h1>MY WORK</h1>
 				<div className="gallery">
-					<div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel1} className="d-block w-100" alt="..."/>
-					</div>
-					<div>
+					</animated.div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel2} className="d-block w-100" alt="..."/>
-					</div>
-					<div>
+					</animated.div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel3} className="d-block w-100" alt="..."/>
-					</div>
-					<div>
+					</animated.div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel4} className="d-block w-100" alt="..."/>
-					</div>
-					<div>
+					</animated.div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel5} className="d-block w-100" alt="..."/>
-					</div>
-					<div>
+					</animated.div>
+					<animated.div
+      				onMouseMove={({ clientX: x, clientY: y }) => set({ xys: calc(x, y) })}
+      				onMouseLeave={() => set({ xys: [0, 0, 1] })}
+      				style={{ transform: props.xys.interpolate(trans) }}>
 						<img src={Carousel6} className="d-block w-100" alt="..."/>
-					</div>
+					</animated.div>
 				</div>
 			</div>
 		</div>
