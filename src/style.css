@@ -180,7 +180,8 @@ main {
 	color: #C5D8D1;
 }
 .nav-header-links .nav .nav-item .nav-link:hover {
-	color: #06BCC1;
+	background-color: #06BCC1;
+	color: #1B2F44;
 }
 
 .nav-footer {
@@ -343,7 +344,7 @@ main {
 /*Desktop*/
 @media screen and (min-width: 900px) {
 	* {
-		font-size: 13px;
+		font-size: 16px;
 	}
 
 	h1 {
@@ -351,7 +352,7 @@ main {
 	}
 
 	h2 {
-		font-size: 12px;
+		font-size: 16px;
 	}	
 
 	main {
