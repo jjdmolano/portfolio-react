@@ -1,0 +1,17 @@
+.mainPage {
+    margin: 1em 1.5em 7em 1.5em;
+}
+
+.mainPage section {
+    margin: 1.5em 0 1.5em 0;
+}
+
+@media screen and (min-width: 850px) {
+    .mainPage {
+        margin: 1em 15% 1em 15%;
+        display: grid;
+        column-gap: 3em;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: repeat(auto, minmax());
+    }
+}

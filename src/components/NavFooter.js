@@ -1,38 +1,38 @@
-import React from 'react';
-import { library } from '@fortawesome/fontawesome-svg-core';
-import { faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react'
+import { Navbar, Nav } from 'react-bootstrap'
+import { faUserAlt, faList, faPhone } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import styles from './NavFooter.module.css'
 
-
-function NavFooter(){
-	return(
-	<nav id="nav-footer" className="nav-footer">
-		<ul className="nav nav-fill">
-			<li className="nav-item">
-				<a className="nav-link nav-foot" href="#about">
-					<FontAwesomeIcon icon={faUserAlt} className ="listIcon" size="2x" fixedWidth/>
-				<br/>
-				ABOUT
-				</a>
-
-			</li>
-			<li className="nav-item">
-				<a className="nav-link nav-foot" href="#skills">
-					<FontAwesomeIcon icon={faList} className ="listIcon" size="2x" fixedWidth/>
-				<br/>
-				SKILLS
-				</a>
-			</li>
-			<li className="nav-item">
-				<a className="nav-link nav-foot" href="#contact">
-					<FontAwesomeIcon icon={faPhone} className ="listIcon" size="2x" fixedWidth/>
-				<br/>
-				CONTACT
-				</a>
-			</li>
-		</ul>	
-	</nav> 
+export default function NavFooter() {
+	return (
+		<Navbar className={styles.navContainer} id="nav-footer" fixed='bottom'>
+			<Nav className={styles.iconList}>
+				<Nav.Link className={styles.iconAndLabel} href="#about">
+					<FontAwesomeIcon
+						icon={faUserAlt}
+						size='2x'
+						fixedWidth
+					/>
+                    <p>ABOUT</p>
+				</Nav.Link>
+				<Nav.Link className={styles.iconAndLabel} href="#skills">
+					<FontAwesomeIcon
+						icon={faList}
+						size='2x'
+						fixedWidth
+					/>
+					<p>SKILLS</p>
+				</Nav.Link>
+				<Nav.Link className={styles.iconAndLabel} href="#contact">
+					<FontAwesomeIcon
+						icon={faPhone}
+						size='2x'
+						fixedWidth
+					/>
+					<p>CONTACT</p>
+				</Nav.Link>
+			</Nav>
+		</Navbar>
 	)
 }
-
-export default NavFooter

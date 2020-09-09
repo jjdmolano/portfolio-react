@@ -1,0 +1,45 @@
+.section {
+	background-color: #aeaeae;
+	margin: 0 1em 0 1em;
+	padding: 1em 1em 2em 1em;
+}
+
+.section > *,
+.section div > * {
+	background-color: #aeaeae;
+}
+.sectionHeader {
+	background-color: inherit;
+	margin-bottom: 1em;
+}
+
+.iconList {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+}
+
+.iconAndLabel {
+	margin: 0;
+	display: flex;
+	flex-direction: column;
+	width: fit-content;
+}
+
+.iconAndLabel > * {
+	align-self: center;
+}
+
+@media screen and (min-width: 850px) {
+    .section {
+        grid-column: 2/3;
+    }
+
+    .iconList {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+}

@@ -1,0 +1,34 @@
+.section {
+    background-color: #AEAEAE;
+    margin: 0 1em 0 1em;
+    padding: 1em;
+}
+
+.sectionHeader {
+    background-color: inherit;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 1em;
+}
+
+.sectionHeader h1 {
+    background-color: inherit;
+    margin: 0;
+    align-self: center;
+}
+
+.sectionHeader img {
+    width: 45%;
+    margin-left: auto;
+}
+
+.section p {
+    background-color: inherit;
+    text-align: justify;
+}
+
+@media screen and (min-width: 850px) {
+    .section {
+        grid-column: 2/3;
+    }
+}
