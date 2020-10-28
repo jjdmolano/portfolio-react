@@ -7,11 +7,11 @@ import ProfilePage from './components/ProfilePage';
 import NavFooter from './components/NavFooter';
 
 const myComponent = (
-		<Container fluid>
-            <NavBar/>
-            <ProfilePage/>
-            <NavFooter/>
-		</Container>
+    <Container fluid>
+        <NavBar/>
+        <ProfilePage/>
+        <NavFooter/>
+    </Container>
 )
 const divRoot = document.getElementById('root')
 ReactDOM.render(myComponent, divRoot);

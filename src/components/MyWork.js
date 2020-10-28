@@ -16,7 +16,7 @@ export default function MyWork() {
 		<section className={styles.section}>
 			<h1 className={styles.sectionHeader}>MY WORK</h1>
 			<div>
-				<p>Click/tap images for more info</p>
+				<p>Select images for more info</p>
 				<Button className={styles.modalButton} block onClick={showModal}>
 					<Image className={styles.images} src='/cp2.jpg' alt='capstone2' />
 				</Button>
@@ -27,6 +27,7 @@ export default function MyWork() {
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className={styles.modalBody}>
+					    <Image className={styles.images} src='/cp2.jpg' alt='capstone2' />
 						<h4>
 							Second capstone project, a fully functional budget tracker using
 							MERN stack
@@ -82,13 +83,14 @@ export default function MyWork() {
 				<Button className={styles.modalButton} block onClick={showModal2}>
 					<Image className={styles.images} src='/cp1.jpg' alt='capstone1' />
 				</Button>
-				<Modal show={show2} onHide={closeModal2} centered size='lg'>
+				<Modal className={styles.modal} show={show2} onHide={closeModal2} centered size='lg'>
 					<Modal.Header className={styles.modalHeader}>
 						<Modal.Title className={styles.modalTitle}>
 							<h3>Personal Portfolio</h3>
 						</Modal.Title>
 					</Modal.Header>
 					<Modal.Body className={styles.modalBody}>
+                        <Image className={styles.images} src='/cp1.jpg' alt='capstone1' />
 						<h4>First capstone project, a static personal website</h4>
 						<ul>
 							<li>Built using HTML, CSS and Bootstrap</li>

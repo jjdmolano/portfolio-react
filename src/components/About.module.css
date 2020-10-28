@@ -1,18 +1,15 @@
 .section {
-    background-color: #AEAEAE;
-    margin: 0 1em 0 1em;
-    padding: 1em;
+    margin: 0 1em;
+    padding: 2em;
 }
 
 .sectionHeader {
-    background-color: inherit;
     display: flex;
     flex-direction: row;
     margin-bottom: 1em;
 }
 
 .sectionHeader h1 {
-    background-color: inherit;
     margin: 0;
     align-self: center;
 }
@@ -23,7 +20,6 @@
 }
 
 .section p {
-    background-color: inherit;
     text-align: justify;
 }
 

@@ -1,11 +1,6 @@
 .section {
-    background-color: #AEAEAE;
-    margin: 0 1em 0 1em;
-    padding: 1em 1em 2em 1em;
-}
-
-.section > *, .section div > * {
-    background-color: #AEAEAE;
+    margin: 0 1em;
+    padding: 2em;
 }
 
 .section div p {
@@ -14,7 +9,6 @@
 }
 
 .sectionHeader {
-    background-color: inherit;
     margin-bottom: 1em;
 }
 
@@ -23,16 +17,15 @@
 }
 
 .modalButton {
-    background-color: #AEAEAE;
     border: 0px;
     border-radius: 0px;
     padding: 0;
 }
 
 .modalHeader, .modalTitle, .modalTitle h3 {
-    background-color: #12263A;
-    border-color: #AEAEAE;
-    color: #C9C9C9;
+    background-color: #06bcc1;
+    border-color: #0a141f;
+    color: #0a141f;
 }
 
 .modalTitle h3 {
@@ -41,7 +34,15 @@
 }
 
 .modalBody, .modalBody > *, .modalBody ul > * {
-    background-color: #AEAEAE;
+    background-color: #0a141f;
+}
+
+.modalBody {
+    padding: 2em;
+}
+
+.modalBody .images {
+    padding-bottom: 2em;
 }
 
 .modalBody ul {
@@ -53,7 +54,7 @@
 }
 
 .modalBody p a {
-    color: #12263A;
+    color: #c5d8d1;
 }
 
 .modalIcon {

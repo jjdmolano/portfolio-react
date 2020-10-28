@@ -1,45 +1,51 @@
 .section {
-	background-color: #aeaeae;
-	margin: 0 1em 0 1em;
-	padding: 1em 1em 2em 1em;
+    background-color: #18334e;
+    margin: 0 1em;
+    padding: 2em;
 }
 
-.section > *,
-.section div > * {
-	background-color: #aeaeae;
-}
 .sectionHeader {
-	background-color: inherit;
+    background-color: inherit;
 	margin-bottom: 1em;
 }
 
+.section > div, .section > div > h2 {
+    background-color: #18334e;
+}
+
 .iconList {
+    background-color: #18334e;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: wrap;
-	justify-content: space-around;
+    justify-content: space-between;
 }
 
 .iconAndLabel {
-	margin: 0;
+    background-color: inherit;
+    margin: 0;
+    padding: .5rem 0;
 	display: flex;
 	flex-direction: column;
-	width: fit-content;
+	width: 50%;
 }
 
 .iconAndLabel > * {
+    background-color: inherit;
 	align-self: center;
 }
 
 @media screen and (min-width: 850px) {
     .section {
-        grid-column: 2/3;
+        grid-column: 1/3;
     }
 
     .iconList {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: left;
+    }
+
+    .iconAndLabel {
+        margin: 1rem 0;
+        width: 30%;
     }
 }

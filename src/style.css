@@ -5,8 +5,8 @@
 	font-family: 'Roboto', sans-serif;
 	font-family: 'Montserrat', sans-serif;
 	font-size: 16px;
-	background-color: #c9c9c9;
-	color: #12263a;
+	background-color: #12263a;
+	color:#c5d8d1;
 	scroll-behavior: smooth;
 }
 
@@ -19,7 +19,7 @@ h1 {
 
 h2 {
 	font-family: 'Open Sans', sans-serif;
-	font-size: 22px;
+    font-size: 20px;
 	white-space: nowrap;
 }
 
