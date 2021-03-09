@@ -6,7 +6,8 @@ export default function About() {
 		<section className={styles.section} id="about">
             <div className={styles.sectionHeader}>
 			    <h1>ABOUT ME</h1>
-                <img src='/about.jpg' alt='about' />
+                <img className={styles.image2} src='/about2.jpg' alt='about2' />
+                <img className={styles.image} src='/about.jpg' alt='about' />
             </div>
 			<p>
 				Pursuing web development as a primary field of work and as a passion.

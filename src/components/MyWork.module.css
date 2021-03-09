@@ -1,69 +1,104 @@
 .section {
-    margin: 0 1em;
-    padding: 2em;
+	margin: 0 1em;
+	padding: 2em;
 }
 
 .section div p {
-    display: flex;
-    justify-content: center;
+	display: flex;
+	justify-content: center;
 }
 
 .sectionHeader {
-    margin-bottom: 1em;
+	margin-bottom: 1em;
 }
 
 .images {
-    width: 100%;
+    width: 80vw;
 }
 
-.modalButton {
-    border: 0px;
-    border-radius: 0px;
-    padding: 0;
+.cardDeck {
+	display: flex;
+	flex-direction: column;
+    padding: 1.5em 0;
 }
 
-.modalHeader, .modalTitle, .modalTitle h3 {
-    background-color: #06bcc1;
-    border-color: #0a141f;
-    color: #0a141f;
+.card {
+	background-color: #0a141f;
+	border-color: transparent;
+}
+
+.cardLogo, .cardLogo3 {
+	background-color: #0a141f;
+	height: 10rem;
+	padding: 1rem 2rem;
+}
+
+.cardLogo3 {
+    fill: #c5d8d1;
+}
+
+.cardBody,
+.cardTitle,
+.cardText {
+	background-color: #0a141f;
+}
+
+.modalHeader,
+.modalTitle,
+.modalTitle h3 {
+	background-color: #06bcc1;
+	border-color: #0a141f;
+	color: #0a141f;
+    border-style: none;
 }
 
 .modalTitle h3 {
-    margin: 0;
-    align-self: center;
+	margin: 0;
+	align-self: center;
 }
 
-.modalBody, .modalBody > *, .modalBody ul > * {
-    background-color: #0a141f;
+.modalBody,
+.modalBody > *,
+.modalBody ul > * {
+	background-color: #0a141f;
 }
 
 .modalBody {
-    padding: 2em;
+	padding: 2em;
 }
 
 .modalBody .images {
-    padding-bottom: 2em;
+	padding-bottom: 2em;
 }
 
 .modalBody ul {
-    list-style-position: inside;
+	list-style-position: inside;
 }
 
 .modalBody p {
-    text-align: center;
+	text-align: center;
 }
 
 .modalBody p a {
-    color: #c5d8d1;
+	color: #c5d8d1;
 }
 
 .modalIcon {
-    background-color: inherit;
+	background-color: inherit;
 }
 
 @media screen and (min-width: 850px) {
-    .section {
-        grid-column: 1/2;
-        grid-row: 1/3;
+	.section {
+		grid-column: 1/3;
+		grid-row: 2/3;
+	}
+
+    .images {
+        width: 100%;
     }
+
+	.cardDeck {
+		display: flex;
+		flex-direction: row;
+	}
 }

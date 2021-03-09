@@ -1,7 +1,5 @@
 .section {
     background-color: #18334e;
-    margin: 0 1em;
-    padding: 2em;
 }
 
 .sectionHeader {
@@ -24,10 +22,14 @@
 .iconAndLabel {
     background-color: inherit;
     margin: 0;
-    padding: .5rem 0;
+    padding: 0.5rem 0;
 	display: flex;
 	flex-direction: column;
 	width: 50%;
+}
+
+.iconAndLabel > h3 {
+    padding-top: 1rem;
 }
 
 .iconAndLabel > * {

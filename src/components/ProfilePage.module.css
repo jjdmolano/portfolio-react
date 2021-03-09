@@ -2,10 +2,6 @@
     padding: 1em 0 7em 0;
 }
 
-.mainPage section {
-    margin: 1.5em 0;
-}
-
 @media screen and (min-width: 850px) {
     .mainPage {
         padding: 1em 0;
@@ -16,6 +12,6 @@
     }
 
     .mainPage section {
-        padding: 1.5em 20%;
+        padding: 5em 20%;
     }
 }

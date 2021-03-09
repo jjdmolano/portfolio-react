@@ -8,6 +8,7 @@ import {
 	faNodeJs,
 	faJava
 } from '@fortawesome/free-brands-svg-icons'
+import { faDatabase, faLeaf } from '@fortawesome/free-solid-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import styles from './Skills.module.css'
 
@@ -49,6 +50,14 @@ export default function Skills() {
 					<div className={styles.iconAndLabel}>
 						<FontAwesomeIcon icon={faJava} size='4x' fixedWidth />
 						<h3>JAVA</h3>
+					</div>
+					<div className={styles.iconAndLabel}>
+						<FontAwesomeIcon icon={faDatabase} size='4x' fixedWidth />
+						<h3>MYSQL</h3>
+					</div>
+					<div className={styles.iconAndLabel}>
+						<FontAwesomeIcon icon={faLeaf} size='4x' fixedWidth />
+						<h3>MONGODB</h3>
 					</div>
 				</div>
 			</div>

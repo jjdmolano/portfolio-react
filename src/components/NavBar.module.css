@@ -1,0 +1,21 @@
+.navLinks {
+    display: none;
+}
+
+@media screen and (min-width: 850px) {
+    .navLinks {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        margin: 0 0 0 auto;
+        padding: 1em;
+    }
+
+    .links {
+        padding: 0 2em;
+    }
+
+    .links > p {
+        margin: 0;
+    }
+}

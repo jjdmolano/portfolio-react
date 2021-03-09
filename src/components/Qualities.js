@@ -16,27 +16,27 @@ export default function Qualities() {
 			<h1 className={styles.sectionHeader}>QUALITIES</h1>
 			<div className={styles.iconList}>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faHandshake} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faHandshake} size='3x' fixedWidth />
 					<p>Experienced with clients</p>
 				</div>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faPeopleArrows} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faPeopleArrows} size='3x' fixedWidth />
 					<p>Open to feedback</p>
 				</div>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faGraduationCap} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faGraduationCap} size='3x' fixedWidth />
 					<p>Always eager to learn</p>
 				</div>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faCoffee} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faCoffee} size='3x' fixedWidth />
 					<p>Can handle variable work hours</p>
 				</div>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faIdBadge} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faIdBadge} size='3x' fixedWidth />
 					<p>Registered Mechanical Engineer</p>
 				</div>
 				<div className={styles.iconAndLabel}>
-					<FontAwesomeIcon icon={faCertificate} size='4x' fixedWidth />
+					<FontAwesomeIcon icon={faCertificate} size='3x' fixedWidth />
 					<p>Zuitt Coding Bootcamp Certificate</p>
 				</div>
 			</div>
